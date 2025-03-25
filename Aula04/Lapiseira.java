@@ -5,9 +5,12 @@ public class Lapiseira {
     private boolean tampada;
 
     
-    public Lapiseira() {
+    public Lapiseira(String m, String c, float p) {
+        this.setModelo(m);
+        this.setCor(c);
+        this.setPonta(p);
         this.tampar();
-        this.cor = "Azul";
+        ;
     }
 
     public String getModelo(){
@@ -24,6 +27,14 @@ public class Lapiseira {
 
     public void setPonta(float p){
         this.ponta = p;
+    }
+
+    public String getCor (){
+        return this.cor;
+    }
+
+    public void setCor(String c){
+        this.cor = c;
     }
 
     public void tampar(){
