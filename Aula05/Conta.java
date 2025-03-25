@@ -75,11 +75,11 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void statusConta(){
+        System.out.println("O Número da conta: " + this.numConta);
+        System.out.println("tipo de Conta: " + getTipoConta());
+        System.out.println("Nome do Cliente: " + getNome());
+        System.out.println("Saldo atual: " + getSaldo());
+        System.out.println("Status da Conta: " + this.status);
     }
 }
