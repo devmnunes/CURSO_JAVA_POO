@@ -17,10 +17,10 @@ public class Conta {
 
     public void fecharConta(){
         if (saldo < 0){
-            System.out.println("Seu saldo é negativo, não podemos fechar sua conta!!!");
+            System.out.println("Não conseguimos encerrar sua conta, por favor verifique se se há débitos para pagar.");
             status = true;
         } else {
-            System.out.println("Conta encerrada com SUCESSO!!!");
+            System.out.println("Conta Encerrada!");
             status = false;
         }
       }
